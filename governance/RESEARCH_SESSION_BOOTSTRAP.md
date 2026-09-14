@@ -1,28 +1,32 @@
 # SymC Research Session Bootstrap
 
-Purpose: eliminate avoidable startup delay and prevent new research chats from proceeding under stale protocol or stale repository state.
+Purpose: eliminate avoidable startup delay and prevent new research chats from proceeding under stale manual or stale repository state.
 
 ## Required startup sequence
 
-1. At the first substantive turn of a new SymC research chat, load the current authoritative General Cross-Project Research Protocol before substantial analysis or execution whenever it is accessible through the conversation, project files, File Library, or a connected repository source.
-2. Read the Core Card first. Load the Operating Quick Reference only when the task can trigger those controls, then read the protocol sections material to the immediate task. Do not require a full reread of the entire protocol for every question.
-3. If the current protocol cannot be loaded and GitHub access is not available to the conversation, surface the option to connect or enable GitHub at the beginning of the conversation, before a long research response. Authorization delay should not consume several minutes of reading before the user learns that repository access is needed.
+1. At the first substantive turn of a new SymC research chat, load the current authoritative SymC General Operations Manual (GOM) before substantial analysis or execution whenever it is accessible through the conversation, project files, File Library, or a connected repository source.
+2. Read the Core Card first. Load the Operating Quick Reference only when the task can trigger those controls, then read the GOM sections material to the immediate task. Do not require a full reread of the entire manual for every question.
+3. If the current GOM cannot be loaded and GitHub access is not available to the conversation, surface the option to connect or enable GitHub at the beginning of the conversation, before a long research response. Authorization delay should not consume several minutes of reading before the user learns that repository access is needed.
 4. If GitHub is already connected and authorized, use it when repository state is material. Do not ask for redundant per-conversation permission.
 5. Before inheriting active work, verify current source-of-record state: active branch/workflow/run, relevant commit, watchdog/recovery state, and whether the work has already completed, failed, been superseded, or fallen off.
 6. Do not launch duplicate work merely because the new chat lacks prior conversational context.
-7. If the authoritative protocol still cannot be directly loaded, proceed only with the best available context and state that the current GP was not directly verified. Never silently substitute an older protocol when a newer one may exist.
+7. If the authoritative GOM still cannot be directly loaded, proceed only with the best available context and state that the current GOM was not directly verified. Never silently substitute an older version when a newer one may exist.
 
 ## Current authoritative baseline
 
-General Cross-Project Research Protocol v0.8.0, dated 14 September 2026.
+SymC General Operations Manual v0.8.0, dated 14 September 2026.
 
-Authoritative Markdown SHA-256: `93171d0dc592ae34dcfda373d8ef088b3c90625d0c9f905b88854a19af61e1e6`
+Expected authoritative Markdown filename: `SymC_General_Operations_Manual_v0.8.0.md`
 
-This line is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it.
+Authoritative Markdown SHA-256: `ee3d9955e19f280ad385488180800d1cdb2d5054823cfa2fa6a697ab3f51d396`
+
+This is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it. Numbered releases are promoted only by explicit user authorization; review builds do not become active releases, and version numbers are not skipped unless the user explicitly authorizes the skip.
 
 ## Internal-use transfer principle
 
-The GP stores program-wide transferable rules. Project-specific equations, datasets, atlas targets, paper-specific claims, and implementation details remain in the relevant project protocol unless they are necessary to understand or execute a general rule safely. When a project lesson generalizes, promote the transferable rule into the GP in domain-neutral form rather than importing the full project machinery.
+The GOM stores program-wide transferable rules. Project-specific equations, datasets, atlas targets, paper-specific claims, and implementation details remain in the relevant project protocol unless they are necessary to understand or execute a general rule safely. When a project lesson generalizes, promote the transferable rule into the GOM in domain-neutral form rather than importing the full project machinery.
+
+When consolidation removes a project-specific safeguard from the GOM, verify that its project-local destination exists or create one before treating the safeguard as safely relocated.
 
 ## Reader-first communication default
 
