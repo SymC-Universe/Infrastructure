@@ -12,9 +12,13 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 6. Do not launch duplicate work merely because the new chat lacks prior conversational context.
 7. If the authoritative protocol still cannot be directly loaded, proceed only with the best available context and state that the current GP was not directly verified. Never silently substitute an older protocol when a newer one may exist.
 
-## Current protocol at bootstrap update
+## Current authoritative baseline
 
-General Cross-Project Research Protocol v0.7.8, dated 14 September 2026. This line is a pointer, not a permanent claim of currency. The highest later active version supersedes it.
+General Cross-Project Research Protocol v0.8.0, dated 14 September 2026.
+
+Authoritative Markdown SHA-256: `125e31263ae6c1920537dd7c38675dacaa90f31e638b921778f5f9e5862d789d`
+
+This line is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it.
 
 ## Internal-use transfer principle
 
