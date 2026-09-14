@@ -16,7 +16,7 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 
 General Cross-Project Research Protocol v0.8.0, dated 14 September 2026.
 
-Authoritative Markdown SHA-256: `125e31263ae6c1920537dd7c38675dacaa90f31e638b921778f5f9e5862d789d`
+Authoritative Markdown SHA-256: `93171d0dc592ae34dcfda373d8ef088b3c90625d0c9f905b88854a19af61e1e6`
 
 This line is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it.
 
