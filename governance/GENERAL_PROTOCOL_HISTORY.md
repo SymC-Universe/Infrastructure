@@ -1,42 +1,36 @@
-# General Cross-Project Research Protocol History
+# SymC General Operations Manual History Pointer
 
-Purpose: preserve active-baseline lineage and retired/consolidated protocol material outside the current manual, as required by the v0.8.0 internal-use transfer principle.
+Purpose: preserve active-baseline lineage and retired/consolidated governance material outside the active manual while keeping the repository bootstrap operationally lean.
 
-This record is historical/provenance documentation. It does not supersede the current General Protocol and does not retroactively rescore scientific work.
+This file is historical/provenance documentation. It does not supersede the current SymC General Operations Manual and does not retroactively rescore scientific work.
 
-## Current active baseline
+## Current authoritative baseline
 
-### v0.8.0
+### SymC General Operations Manual v0.8.0
 
 - Date: 14 September 2026
 - Status: `Definitive Active Baseline`
-- Authoritative Markdown SHA-256: `93171d0dc592ae34dcfda373d8ef088b3c90625d0c9f905b88854a19af61e1e6`
-- Source metadata states: `supersedes: 0.7.8`
-- Program-level change: consolidated the General Protocol around transferable scientific and operational rules; project-specific equations, datasets, Atlas targets, domain examples, and implementation machinery move to project protocols unless needed to execute a general rule safely.
-- Scientific floor preserved: MFR-14, native-model-first derivation, epistemic classification, promotion, anti-circularity/independence, refusal, reproducibility, relational stability, hierarchical closure, foundational dependency, and falsification architecture.
-- Operational rules are trigger-based and proportional rather than permanently occupying the core loading surface.
+- Authoritative Markdown filename: `SymC_General_Operations_Manual_v0.8.0.md`
+- Authoritative Markdown SHA-256: `ee3d9955e19f280ad385488180800d1cdb2d5054823cfa2fa6a697ab3f51d396`
+- Authoritative PDF SHA-256: `97d2af3720acb1d22536c23ead70d9f09082484eab4beec0ff7295caca66688c`
+- Definitive companion history filename: `SymC_General_Operations_Manual_History_through_v0.8.0.md`
+- Companion history SHA-256: `05d9f501f68b00562f81df0f655704f192f07ebcadfbf558211cef8a14f1b514`
+- Source metadata: `supersedes: 0.7.8`
 
-## Directly audited predecessor available to current migration
+The definitive companion history resolves the earlier migration-audit uncertainty about v0.7.8. It records v0.7.8 as the 14 September 2026 consolidation pass and v0.8.0 as the user-authorized definitive General Operations Manual baseline. The earlier generated v0.8.0 candidate was a review build and never became the authoritative numbered release.
 
-### v0.7.7
+## Governing lineage rule
 
-- Date: 13 September 2026
-- Status: `Active Baseline`
-- Markdown SHA-256: `84ef99170e71ef3950acd3be57bc49deedc3287f0a523119d08f6c31a3a13473`
-- Added/clarified research-session bootstrap and reader-first communication while retaining v0.7.6 monitoring, v0.7.5 foundational-dependency robustness, v0.7.4 relational stability / experimental opportunity / attribution / balance, and earlier safeguards.
+Legacy references to the General Cross-Project Research Protocol or GP identify earlier names of the same program-level governance lineage. Current work should use the name **SymC General Operations Manual (GOM)** unless a historical version is being discussed explicitly.
 
-## Lineage gap recorded, not inferred
+Numbered releases become authoritative only by explicit user promotion. Drafts, review builds, and release candidates do not become active merely by being generated, and version numbers are not skipped without explicit user approval.
 
-The v0.8.0 metadata names v0.7.8 as its immediate predecessor. A v0.7.8 artifact was not present in the protocol file set or governance repository inspected during the 14 September 2026 v0.8.0 migration audit. Therefore the exact v0.7.8 -> v0.8.0 delta is not reconstructed here from memory or inference.
+## Scientific continuity
 
-The exact machine diff performed for the available v0.7.7 -> v0.8.0 pair found:
+The definitive v0.8.0 package preserves the non-reducible scientific core, including MFR-14, native-model-first derivation, epistemic classification, P0-D/P0-Q/P1/P2 separation, promotion debt, independence, refusal, Function/Limit mapping, relational stability, hierarchical closure, foundational dependency, monitoring/recovery, reproducibility, and program-level falsification.
 
-- v0.7.7: 4,392 lines; 25,959 words; 210,732 bytes;
-- v0.8.0: 3,267 lines; 18,583 words; 151,430 bytes;
-- diff: 179 inserted lines and 1,304 deleted lines.
-
-The large deletion count primarily reflects consolidation and relocation of project-specific/domain-specific and historical material. Any project that previously depended on a removed domain section must preserve still-active project-specific safeguards in its local protocol rather than treating deletion from the GP as scientific retirement.
+Project-specific equations, dataset conventions, Atlas targets, implementation details, and claim ceilings remain in project-local protocols. When consolidation removes a project-specific safeguard from the GOM, the safeguard is not considered safely relocated until a local destination is identified or created.
 
 ## Historical handling rule
 
-Future entries should record only verified baseline identity, date/status, material transferable change, and the location/hash of the authoritative artifact when available. Missing intermediate versions remain explicit gaps. Retired rules or moved project-specific controls are not silently reconstructed from AI recall.
+The definitive companion history is the source of record for detailed version changes and retired-rule lineage through v0.8.0. Future repository pointers should record only verified baseline identity, date/status, hashes, and the location of the authoritative history artifact. Missing lineage must remain explicit rather than being reconstructed from AI recall.
