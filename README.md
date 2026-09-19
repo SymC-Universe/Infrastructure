@@ -1,88 +1,64 @@
-SymC Infrastructure Stability
+# SymC Infrastructure Stability
 
-This repository contains empirical analysis, figures, and supplementary material examining infrastructure stability through the lens of Symmetrical Convergence (SymC).
+**Current research notice: 19 September 2026**
 
-The central claim explored here is that large-scale infrastructure systems inherit a critical-damping stability boundary from their underlying physical substrates. Stability, degradation, and failure are analyzed as consequences of alignment or misalignment with this inherited boundary, rather than as isolated control or contingency events.
+This repository preserves the historical SymC infrastructure / power-grid work and now also hosts program-level governance records.
 
-Electrical power networks serve as the primary empirical testbed due to their continuous instrumentation, physical grounding, and operational scale. The conclusions, however, are not grid-specific.
+The original grid manuscript and older landing text contain stronger claims about universal critical damping, substrate inheritance, long precursor lead times, irreversible degradation, and operational control thresholds than the current SymC General Operations Manual v0.8.0 licenses from the evidence presently preserved here.
 
-This repository includes:
+Those statements are retained as historical research claims, not automatically as current validated results.
 
-Empirical figures derived from real, high-resolution infrastructure data
-Scale-invariant time-series (“ticker”) plots demonstrating topology-preserving failure dynamics
-Longitudinal analyses showing irreversible substrate degradation and hysteresis
-Precursor detection identifying measurable drift well before visible instability
-Tiered operational doctrines indexed to a single stability coordinate (𝜒)
-Supplementary derivations and archival material supporting reproducibility
+## Current scientific posture
 
-The emphasis is on measurement, structure, and consequence. The analyses and protocols documented here are intended to serve as a stability-layer foundation upon which concrete operational implementations can be built.
+Power-system stability must begin from native grid dynamics and measurements: electromechanical modes, damping estimates, inertia, network topology, controller dynamics, PMU/FNET observables, event definitions, operating state, and established grid-stability comparators.
 
+A local or modal damping ratio may be scientifically meaningful when an identified second-order mode supports it. That does not automatically create one whole-grid scalar chi, one universal chi=1 operating optimum, or a direct inheritance relation from microscopic electromagnetic physics to every operational layer.
 
-Conceptual position within SymC
-This repository sits at the interface between theory and instrumented reality.
+The present program therefore does **not** assume that:
 
-The critical-damping boundary is developed in the foundational SymC work.
-Substrate inheritance is formalized in Noughts.
-This repository tests those ideas in systems that are:
-physically instantiated,
-spatially distributed,
-continuously measured,
-and operationally constrained.
-Infrastructure systems are treated as composed substrates, not abstractions.
+- all grids operate at one universal critical-damping boundary;
+- a fitted scalar alone represents whole-grid stability;
+- 60+ minute precursor lead time has been independently validated for operational deployment;
+- fixed chi thresholds define universal intervention tiers;
+- apparent baseline drift proves irreversible physical substrate damage;
+- redundancy can maintain grid stability indefinitely;
+- cross-scale resemblance proves a single causal inheritance mechanism.
 
-Relationship to other SymC repositories
-This work is part of the broader SymC research program:
+## Historical grid manuscript
 
-Noughts — Substrate Inheritance Framework
-https://github.com/SymCUniverse/noughts
+The existing `SymC_GridCon.tex`, PDF-derived figures/material, and supplement are preserved as historical research artifacts.
 
-SymC — Foundational Boundary Principle
-https://github.com/SymCUniverse/symc
+Before a new grid paper or operational tool is released, the program needs a GOM-v0.8.0 rebuild that separates:
 
-SymC QFT Extensions
-https://github.com/SymCUniverse/symc-qft
+- native grid observables from SymC interpretation;
+- local/modal damping from system-level organization;
+- descriptive event reconstruction from untouched early-warning prediction;
+- state classification from recovery/resilience;
+- retrospective thresholds from prospectively frozen thresholds;
+- mechanism from association;
+- simulation demonstrations from field validation;
+- Function Map from Limit Map;
+- standard grid-security methods from any residual SymC contribution.
 
-SymC Oscillator and Field Models
-https://github.com/SymCUniverse/symc-neutrino
+Any future operational-control claim must be benchmarked against accepted power-system methods and validated on appropriately labeled, independent event data before it is presented as deployable guidance.
 
-Each repository is self-contained. This one emphasizes empirical validation and operational consequence.
+## Program governance
 
-Scope and limits
+The authoritative session bootstrap is:
 
-This repository does not attempt to:
-provide domain-specific control algorithms,
-replace detailed system simulation,
-or model post-collapse nonlinear regimes.
-It focuses on the pre-collapse stability window, where degradation is detectable, intervention is possible, and system behavior remains interpretable.
+`governance/RESEARCH_SESSION_BOOTSTRAP.md`
 
-Status
+It points to the current SymC General Operations Manual v0.8.0 authority and its frozen Markdown hash.
 
-Research-grade and archival.
-Its purpose is to document evidence, methodology, and operational framing clearly enough to support independent evaluation, extension, or critique across infrastructure domains.
+Program-wide governance records belong here only when they are transferable across projects. Domain-specific equations, datasets, thresholds, and implementation rules remain in the relevant project repository.
 
-Citation
-If you use or reference this work, please cite the associated paper: 
-APA style
+## Repository status
 
-Christensen, N. (2025). SymC power grid optimization: Harnessing scale-invariance and substrate inheritance alignment for predictive infrastructure stability and control. SymC Universe Project. https://doi.org/10.5281/zenodo.XXXXXXXX
-(Replace XXXXXXXX with the Zenodo DOI once published.)
+`main` currently serves two roles:
 
-If you are referencing the repository directly:
-Christensen, N. (2025). SymC infrastructure stability (Version 1.0) [GitHub repository]. SymC Universe Project. https://github.com/SymCUniverse/infrastructure
+1. archival/public infrastructure research material;
+2. cross-program governance/bootstrap infrastructure.
 
-BibTeX
-@software{christensen2025symc_infrastructure,
-  author  = {Christensen, Nate},
-  title   = {SymC Infrastructure Stability},
-  year    = {2025},
-  publisher = {SymC Universe Project},
-  url     = {https://github.com/SymCUniverse/infrastructure}
-}
+Historical scientific files are preserved rather than silently rewritten. Where they conflict with later explicit GOM-v0.8.0 controls or a project-local correction, the later record governs the present interpretation.
 
-@article{christensen2025symc_grid,
-  author  = {Christensen, Nate},
-  title   = {SymC Power Grid Optimization: Harnessing Scale-Invariance and Substrate Inheritance Alignment for Predictive Infrastructure Stability and Control},
-  year    = {2025},
-  journal = {Zenodo},
-  doi     = {10.5281/zenodo.XXXXXXXX}
-}
+A new infrastructure release should follow a fresh native-grid evidence reconstruction rather than polishing the historical narrative.
