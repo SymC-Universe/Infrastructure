@@ -48,6 +48,10 @@ The authoritative session bootstrap is:
 
 `governance/RESEARCH_SESSION_BOOTSTRAP.md`
 
+The latest complete cross-program audit is:
+
+`governance/PROGRAM_SWEEP_20260919.md`
+
 It points to the current SymC General Operations Manual v0.8.0 authority and its frozen Markdown hash.
 
 Program-wide governance records belong here only when they are transferable across projects. Domain-specific equations, datasets, thresholds, and implementation rules remain in the relevant project repository.
