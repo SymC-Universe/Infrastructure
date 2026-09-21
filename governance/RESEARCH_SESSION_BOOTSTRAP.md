@@ -14,11 +14,13 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 
 ## Current authoritative baseline
 
-SymC General Operations Manual v0.8.0, dated 14 September 2026.
+SymC General Operations Manual v0.8.1, dated 19 September 2026.
 
-Expected authoritative Markdown filename: `SymC_General_Operations_Manual_v0.8.0.md`
+Expected authoritative Markdown filename: `SymC_General_Operations_Manual_v0.8.1.md`
 
-Authoritative Markdown SHA-256: `ee3d9955e19f280ad385488180800d1cdb2d5054823cfa2fa6a697ab3f51d396`
+Authoritative Markdown SHA-256: `ca0c4bcf178b194dd01337e82bdde61332ee76682208a22352ce5e828a984ea0`
+
+v0.8.2 REVIEW and any later review candidate are non-authoritative until explicit user promotion. They may be used as review/mediation inputs but do not supersede v0.8.1 by existence alone.
 
 This is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it. Numbered releases are promoted only by explicit user authorization; review builds do not become active releases, and version numbers are not skipped unless the user explicitly authorizes the skip.
 
