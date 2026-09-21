@@ -1,0 +1,28 @@
+name: SymC chi-capital-Chi mechanical known-truth
+
+on:
+  push:
+    branches:
+      - chi-capitalchi-experimental-expansion-20260921
+    paths:
+      - "research/joint_information_mechanical_known_truth_v01.py"
+      - ".github/workflows/chi-capitalchi-mechanical-known-truth.yml"
+  workflow_dispatch:
+
+jobs:
+  known-truth:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Install numerical dependencies
+        run: python -m pip install --disable-pip-version-check -q "numpy>=2,<3" "scipy>=1.14,<2"
+      - name: Run mechanical joint-information known-truth gate
+        run: python research/joint_information_mechanical_known_truth_v01.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SYMC_CHI_CAPITALCHI_MECHANICAL_KNOWN_TRUTH_V01
+          path: research_outputs/mechanical_joint_information_known_truth_v01.json
+          if-no-files-found: error
