@@ -82,12 +82,52 @@ The repository states that it reproduces Rabuffo et al., *Pre-stimulus Brain Sta
 
 The first SymC use of this source must therefore be a **reproduction/qualification pass**, not a novelty claim. The source-native metrics and source train/test logic are the baseline to beat or equal. A local χ branch is optional and must be separately licensed from native local oscillatory dynamics rather than created from a generic EEG feature.
 
+## Brain source-native qualification result
+
+The source-native qualification completed successfully in `SymC-Universe/Biomedical`:
+
+- workflow run: `35667947330`;
+- head SHA: `7c882cb9221975ae1f1e9b8bb6b4e360ee89a01d`;
+- artifact: `GRI_BRAIN_SOURCE_NATIVE_QUALIFICATION_V01`;
+- artifact ID: `10669554940`;
+- artifact digest: `sha256:0a8ae286220c825381851bb08a71c5246944902ff3bfb17460d63d00c9886610`;
+- exact upstream commit and all six predeclared blob identities matched.
+
+The source-native Salience-to-Salience derived table contains 318 sessions from 36 subjects. Without filtering away negative cross-validation results:
+
+```text
+mean OOS R2                      = -0.3903626243
+median OOS R2                    = -0.1325688419
+fraction OOS R2 > 0              = 0.3993710692
+mean source null R2              = -0.7746289351
+median source null R2            = -0.3791251880
+fraction OOS R2 > source null    = 0.7798742138
+mean (OOS R2 - source null)      = 0.3842663108
+median (OOS R2 - source null)    = 0.3094923758
+```
+
+This is an important qualification nuance. The source contains real state-dependent predictive structure relative to its own null, but the unfiltered session-average OOS R2 is negative. Therefore the SymC calibration must **not** inherit the source notebook's later `R2 >= 0` filter as if it were a prospective population-level success criterion. The complete session distribution is the correct starting point for our same-question challenge.
+
+The supplied spatial-radius summary is likewise nontrivial:
+
+```text
+5 mm -> 5 mm:     mean correlation = 0.574519
+                  mean in-sample R2 = 0.388414
+                  mean CV R2        = -2.010048
+
+100 mm -> 100 mm: mean correlation = 0.540243
+                  mean in-sample R2 = 0.334969
+                  mean CV R2        = -0.390363
+```
+
+This supports scale/radius dependence of the measured relation, not a simple claim that the broadest scale is always more predictive.
+
 ## Current cross-domain state
 
 ```text
 mechanical_known_truth_protocol = PASS
 mechanical_physical_bench = NOT_YET_RUN
-brain_open_data = SOURCE_QUALIFIED_CANDIDATE
+brain_open_data = SOURCE_NATIVE_QUALIFICATION_PASS
 SCC25_joint_chi_Chi = DESIGN_PACKET_EXISTS_NOT_FROZEN
 grid_transport = LITERATURE_COLLISION_COMPLETE_NOT_RUN
 cross_domain_generality = NOT_ESTABLISHED
