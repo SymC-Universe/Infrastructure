@@ -1,0 +1,53 @@
+{
+  "schema": "SYMC_CHI_CAPITALCHI_GRID_TRANSPORT_G1_V01",
+  "date": "2026-09-22",
+  "status": "PASS",
+  "epistemic_class": "P0_D_REAL_GRID_TRANSPORT",
+  "promotion_effect": "NONE",
+  "source_sha256": "f0136df899c26706843b45cf186fb09b7422f934f4407e61e82d3a2156fa7b93",
+  "cross_site_disposition": "LOCAL_MODAL_SUFFICIENT_FOR_THIS_TASK",
+  "per_focal": [
+    {
+      "focal": "f50_DE_KA",
+      "n": 196,
+      "modal_increment": 0.1587328476296963,
+      "system_increment": -0.19706397458186853,
+      "p_alignment": 0.75,
+      "local_modal_r2": -0.11284303655185512,
+      "joint_r2": -0.3321443084205191,
+      "label": "LOCAL_MODAL_SUFFICIENT_FOR_THIS_TASK"
+    },
+    {
+      "focal": "f50_DE_OL",
+      "n": 219,
+      "modal_increment": 0.10076392130092549,
+      "system_increment": -0.30114855239361615,
+      "p_alignment": 1,
+      "local_modal_r2": -0.3531343125382096,
+      "joint_r2": -0.7606287519532224,
+      "label": "LOCAL_MODAL_SUFFICIENT_FOR_THIS_TASK"
+    },
+    {
+      "focal": "f50_PT",
+      "n": 154,
+      "modal_increment": -0.09002780041725766,
+      "system_increment": -0.17933146304022496,
+      "p_alignment": 0.6,
+      "local_modal_r2": -0.1943570564678332,
+      "joint_r2": -0.40854285479662633,
+      "label": "LOCAL_MODAL_SUFFICIENT_FOR_THIS_TASK"
+    },
+    {
+      "focal": "f50_TR",
+      "n": 454,
+      "modal_increment": 0.0851043757920571,
+      "system_increment": -0.135273288660263,
+      "p_alignment": 0.6,
+      "local_modal_r2": 0.170784550823741,
+      "joint_r2": 0.05861385000577124,
+      "label": "LOCAL_MODAL_SUFFICIENT_FOR_THIS_TASK"
+    }
+  ],
+  "independent_verification": "sklearn LinearRegression matched S/L/J SSE to <3.3e-14 absolute difference",
+  "native_method_disposition": "STANDARD_TOOLKIT_EQUIVALENCE_BY_CONSTRUCTION"
+}
