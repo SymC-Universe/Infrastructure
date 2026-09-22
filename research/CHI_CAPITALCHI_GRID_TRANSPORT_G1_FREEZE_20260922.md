@@ -39,6 +39,7 @@ Google Drive source:
 - title: `chi_dataset_300s.csv`
 - Drive file ID: `1_StEQ5NV0DUnwvjpTEWd3IX_ccFTmmWy`
 - stored size: 20,979,636 bytes
+- materialized SHA-256: `f0136df899c26706843b45cf186fb09b7422f934f4407e61e82d3a2156fa7b93`
 - modified: 2026-03-11T05:49:38.317Z
 - parsed data rows: 103,549
 - source columns:
