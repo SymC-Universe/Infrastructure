@@ -1,0 +1,29 @@
+name: SymC ANDES Kundur topology-only preflight
+
+on:
+  push:
+    branches:
+      - chi-capitalchi-experimental-expansion-20260921
+    paths:
+      - "research/andes_kundur_topology_preflight_v01.py"
+      - ".github/workflows/chi-capitalchi-andes-kundur-topology-preflight.yml"
+  workflow_dispatch:
+
+jobs:
+  topology-preflight:
+    runs-on: ubuntu-latest
+    timeout-minutes: 20
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned native simulator
+        run: python -m pip install --disable-pip-version-check -q "andes==2.0.0"
+      - name: Run topology-only preflight
+        run: python research/andes_kundur_topology_preflight_v01.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SYMC_ANDES_KUNDUR_TOPOLOGY_PREFLIGHT_V01
+          path: research/andes_kundur_topology_preflight_v01.json
+          if-no-files-found: error
