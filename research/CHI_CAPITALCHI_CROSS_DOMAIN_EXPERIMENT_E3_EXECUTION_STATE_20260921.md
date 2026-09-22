@@ -141,3 +141,43 @@ cross_domain_generality = NOT_ESTABLISHED
 4. map the existing grid data against the same conditional-information outcome classes.
 
 No cross-domain universality claim is permitted at this stage.
+
+
+## Update: brain source-native known-truth closed
+
+The source-native brain network-dependence reproduction has now passed in the Biomedical execution environment.
+
+- run: `35671352024`
+- head SHA: `885791c4799090c00f7776da4575cbf1f6f0eb6d`
+- artifact: `SYMC_BRAIN_STATE_KNOWN_TRUTH_SOURCE_REPRODUCTION_V01`
+- artifact ID: `10671395900`
+- artifact digest: `sha256:116649a13cef743964857a8902c4c983995ba69d75e0d69ff645b853fb2379e4`
+
+The result reproduces a strong ordered network gradient for SEEG but no monotonic gradient for hdEEG. This is a useful Function/Limit result: system/network organization matters in the source-native evidence, but the form of that dependence is measurement/representation dependent.
+
+No local scalar chi was constructed or inferred from this result.
+
+## Update: SCC25 local-scalar branch narrowed
+
+A separate SCC25 G2 eigenstructure diagnostic has now refused scalar chi for the current R1/A3 weekly representation.
+
+- r=2: no complex-conjugate eigenvalue pair in any required fit;
+- r=3: point-fit complex pair exists, but pair existence fails one required representation/refit and the derived continuous-time ratio is branch dependent;
+- cross-rank disposition: `REPRESENTATION_DEPENDENT_SCALAR_ELIGIBILITY`.
+
+Therefore the active SCC25 joint-meaning experiment uses a native local/modal discrete-time object `z_local`, not a manufactured scalar chi. This is a direct example of the GOM rule that a joint chi<->Chi investigation continues even when one scalar reduction refuses.
+
+## Updated execution state
+
+```text
+mechanical_known_truth_protocol = PASS
+brain_source_native_known_truth = PASS
+brain_measurement_dependence = OBSERVED_SEEG_VS_HDEEG
+SCC25_scalar_chi_current_representation = REFUSED
+SCC25_local_modal_object = ADMITTED_FOR_JOINT_DESIGN
+SCC25_joint_chi_Chi_outcome_run = NOT_YET_FROZEN
+grid_transport = LITERATURE_COLLISION_COMPLETE_NOT_RUN
+cross_domain_generality = NOT_ESTABLISHED
+```
+
+The next scientific gate is the prospective SCC25 joint-design freeze. No outcome-bearing SCC25 joint computation should begin until its broader-system representation, held-out task and incremental-value/refusal rules are fixed.
