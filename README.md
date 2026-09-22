@@ -28,7 +28,7 @@ The present program therefore does **not** assume that:
 
 The existing `SymC_GridCon.tex`, PDF-derived figures/material, and supplement are preserved as historical research artifacts.
 
-Before a new grid paper or operational tool is released, the program needs a GOM-v0.8.0 rebuild that separates:
+Before a new grid paper or operational tool is released, the program needs a GOM-v0.8.3 rebuild that separates:
 
 - native grid observables from SymC interpretation;
 - local/modal damping from system-level organization;
@@ -38,7 +38,9 @@ Before a new grid paper or operational tool is released, the program needs a GOM
 - mechanism from association;
 - simulation demonstrations from field validation;
 - Function Map from Limit Map;
-- standard grid-security methods from any residual SymC contribution.
+- standard grid-security methods from any residual SymC contribution;
+- lowercase modal/local chi from broader grid-level Chi/system organization;
+- perturbation resistance from finite-time response, first reclaim, sustained recovery, reorganization, basin robustness, and repeated-event behavior where those claims are applicable.
 
 Any future operational-control claim must be benchmarked against accepted power-system methods and validated on appropriately labeled, independent event data before it is presented as deployable guidance.
 
@@ -63,6 +65,6 @@ Program-wide governance records belong here only when they are transferable acro
 1. archival/public infrastructure research material;
 2. cross-program governance/bootstrap infrastructure.
 
-Historical scientific files are preserved rather than silently rewritten. Where they conflict with later explicit GOM-v0.8.0 controls or a project-local correction, the later record governs the present interpretation.
+Historical scientific files are preserved rather than silently rewritten. Where they conflict with later explicit GOM-v0.8.3 controls or a project-local correction, the later record governs the present interpretation.
 
 A new infrastructure release should follow a fresh native-grid evidence reconstruction rather than polishing the historical narrative.
