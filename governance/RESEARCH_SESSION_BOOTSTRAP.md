@@ -14,13 +14,13 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 
 ## Current authoritative baseline
 
-SymC General Operations Manual v0.8.1, dated 19 September 2026.
+SymC General Operations Manual v0.8.3, dated 21 September 2026.
 
-Expected authoritative Markdown filename: `SymC_General_Operations_Manual_v0.8.1.md`
+Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v0.8.3.pdf` (duplicate Library filenames may include a numeric suffix).
 
-Authoritative Markdown SHA-256: `ca0c4bcf178b194dd01337e82bdde61332ee76682208a22352ce5e828a984ea0`
+Directly verified PDF SHA-256: `8ad68db8053962008f7d834705c0db678d93217d80e1e4ffc171a35ec8a56501`
 
-v0.8.2 REVIEW and any later review candidate are non-authoritative until explicit user promotion. They may be used as review/mediation inputs but do not supersede v0.8.1 by existence alone.
+v0.8.3 was explicitly promoted by the user and supersedes v0.8.1. v0.8.2 remained a review candidate and never became an active baseline.
 
 This is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it. Numbered releases are promoted only by explicit user authorization; review builds do not become active releases, and version numbers are not skipped unless the user explicitly authorizes the skip.
 
@@ -37,3 +37,18 @@ Use smooth, accurate prose as the default. Paragraphs commonly fall around 3-5 s
 Default adaptable flow: Status; What happened; Why it matters; What happens next; What you need to do.
 
 Governing presentation principle: scrolling should correspond primarily to new information, not formatting.
+
+
+## v0.8.3 cross-program additions
+
+Every active project must now explicitly determine, where scientifically applicable:
+
+1. what lowercase scalar `chi` means and whether it is admitted at all;
+2. what broader `Chi`/system architecture means without forcing a scalar collapse;
+3. what the two mean **together**, including how local/modal behavior contributes to system organization and how system organization conditions local realized behavior;
+4. whether perturbation is an informative probe of that joint meaning;
+5. when a claim concerns response, return, resilience, adaptation, or post-perturbation organization, separate resistance, finite-time response, first reclaim, sustained recovery, reorganization, basin robustness, and repeated-perturbation behavior.
+
+The program must not identify stability with recovery universally. Recovery evidence is required only when the promoted claim actually depends on return/resilience/adaptation or post-perturbation organization.
+
+Project-local implementations may legitimately return NOT_APPLICABLE, REFUSED, NON_IDENTIFIABLE, or NO_COHERENT_SCALAR where the native science does not support a given layer.
