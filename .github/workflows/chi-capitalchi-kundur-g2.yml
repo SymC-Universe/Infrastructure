@@ -1,0 +1,29 @@
+name: SymC Kundur G2 topology recovery
+
+on:
+  push:
+    branches:
+      - chi-capitalchi-experimental-expansion-20260921
+    paths:
+      - "research/kundur_g2_topology_recovery_v01.py"
+      - ".github/workflows/chi-capitalchi-kundur-g2.yml"
+  workflow_dispatch:
+
+jobs:
+  kundur-g2:
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install pinned native simulator
+        run: python -m pip install --disable-pip-version-check -q "andes==2.0.0"
+      - name: Execute frozen G2
+        run: python research/kundur_g2_topology_recovery_v01.py
+      - uses: actions/upload-artifact@v4
+        with:
+          name: SYMC_CHI_CAPITALCHI_GRID_KUNDUR_G2_V01
+          path: research/CHI_CAPITALCHI_GRID_KUNDUR_G2_RESULT_20260922.json
+          if-no-files-found: error
