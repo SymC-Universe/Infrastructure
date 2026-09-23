@@ -14,13 +14,13 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 
 ## Current authoritative baseline
 
-SymC General Operations Manual v0.8.3, dated 21 September 2026.
+SymC General Operations Manual v0.8.4, dated 22 September 2026.
 
-Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v0.8.3.pdf` (duplicate Library filenames may include a numeric suffix).
+Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v0.8.4.pdf` (duplicate Library filenames may include a numeric suffix).
 
-Directly verified PDF SHA-256: `8ad68db8053962008f7d834705c0db678d93217d80e1e4ffc171a35ec8a56501`
+Directly verified PDF SHA-256: `e992ae78febe29e3d8d2e653f5b1a804cfe4247e5fbe91c7f2dc599ca3a46d96`
 
-v0.8.3 was explicitly promoted by the user and supersedes v0.8.1. v0.8.2 remained a review candidate and never became an active baseline.
+v0.8.4 was explicitly authorized by the user and supersedes v0.8.3. It retains the v0.8.3 scalar chi / broader Chi joint-meaning architecture, perturbation-response/recovery architecture, MFR-14 floor, and domain-informed mediation controls, while adding executable program-wide manuscript house-style and reproducibility-guide controls.
 
 This is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it. Numbered releases are promoted only by explicit user authorization; review builds do not become active releases, and version numbers are not skipped unless the user explicitly authorizes the skip.
 
@@ -39,7 +39,7 @@ Default adaptable flow: Status; What happened; Why it matters; What happens next
 Governing presentation principle: scrolling should correspond primarily to new information, not formatting.
 
 
-## v0.8.3 cross-program additions
+## v0.8.3 cross-program additions retained by v0.8.4
 
 Every active project must now explicitly determine, where scientifically applicable:
 
