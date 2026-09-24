@@ -14,13 +14,13 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 
 ## Current authoritative baseline
 
-SymC General Operations Manual v0.8.4, dated 22 September 2026.
+SymC General Operations Manual v0.8.6, dated 22 September 2026.
 
-Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v0.8.4.pdf` (duplicate Library filenames may include a numeric suffix).
+Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v0.8.6.md` (duplicate Library filenames may include a numeric suffix).
 
-Directly verified PDF SHA-256: `e992ae78febe29e3d8d2e653f5b1a804cfe4247e5fbe91c7f2dc599ca3a46d96`
+Directly verified Markdown SHA-256: `82d7096627ede6b9522368e8eea2591d0c51f02e35ed78b24000182d2cdde44c`
 
-v0.8.4 was explicitly authorized by the user and supersedes v0.8.3. It retains the v0.8.3 scalar chi / broader Chi joint-meaning architecture, perturbation-response/recovery architecture, MFR-14 floor, and domain-informed mediation controls, while adding executable program-wide manuscript house-style and reproducibility-guide controls.
+v0.8.6 was explicitly authorized by the user and supersedes v0.8.5. It retains the scientific architecture, scalar chi / broader Chi joint-meaning requirement, perturbation-response/recovery architecture, MFR-14 floor, domain-informed mediation controls, and manuscript house style, while front-loading the canonical paper-building, formatting, lay-explanation, and reproducibility-guide presentation rules into Section 0.4.
 
 This is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it. Numbered releases are promoted only by explicit user authorization; review builds do not become active releases, and version numbers are not skipped unless the user explicitly authorizes the skip.
 
@@ -39,7 +39,7 @@ Default adaptable flow: Status; What happened; Why it matters; What happens next
 Governing presentation principle: scrolling should correspond primarily to new information, not formatting.
 
 
-## v0.8.3 cross-program additions retained by v0.8.4
+## v0.8.3 cross-program additions retained through v0.8.6
 
 Every active project must now explicitly determine, where scientifically applicable:
 
