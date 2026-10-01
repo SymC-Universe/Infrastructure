@@ -12,9 +12,13 @@
 
 ## 1. Scientific question
 
-Investigate power-grid stability from a clean scientific sheet using native power-system dynamics, a massive prior-art pass, and source-identifiable real data. The 2025 SymC grid paper and all prior derived products are historical artifacts only: they may supply questions, failure modes, code paths, or claims to test, but they have no privileged status and do not define the new theory, hypotheses, thresholds, endpoints, or narrative.
+Investigate power-grid stability from a clean scientific sheet using native power-system dynamics, a massive prior-art pass, and source-identifiable real data. The central scientific lane is **recoverability under perturbation**: determine when an observed spike/disturbance is an ordinary perturbation followed by ordinary recovery, when recovery is delayed or interrupted but still compatible with the normal conditional envelope, and when the system's recovery law or stability architecture has materially changed.
+
+The 2025 SymC grid paper and all prior derived products are historical artifacts only: they may supply questions, failure modes, code paths, or claims to test, but they have no privileged status and do not define the new theory, hypotheses, thresholds, endpoints, or narrative.
 
 The objective is a new evidence-led investigation suitable for a genuinely new paper version if the results earn one. Nothing from the old paper is presumed true because it was previously published, uploaded, followed, or labeled validated. Equally, useful pieces are not discarded merely because the old paper overreached.
+
+Canonical central-hypothesis record: `governance/GRID_RECOVERABILITY_CENTRAL_HYPOTHESIS_v0.1_20261001.md`.
 
 ## 2. Rule of engagement
 
@@ -147,6 +151,27 @@ No claim is promoted by confidence language alone.
 
 ## 8. Current work lanes
 
+### Lane 0 — central recoverability program
+
+This lane has execution priority over historical-paper rehabilitation.
+
+Test the chain:
+
+`pre-event native state -> perturbation -> transient response -> first reclaim -> sustained recovery / interruption / reorganization -> repeated-perturbation effect -> prospective classification`.
+
+Required distinctions:
+- perturbation magnitude versus recovery ability;
+- first return versus sustained recovery;
+- normal large spike versus abnormal small spike;
+- baseline migration versus recovery-law change;
+- transient amplification versus instability;
+- new-event interruption versus failed recovery;
+- stable reorganization versus deterioration;
+- erosion versus no-history-effect versus adaptation/strengthening;
+- local/modal recovery versus broader Χ/Χ_arc reorganization.
+
+The initial practical tool target, if earned, is a conditional recovery-state classifier rather than a fixed spike threshold.
+
 ### Lane A — historical atomic claim ledger
 Decompose main manuscript and supplement line-by-line into atomic claims, equations, numerical results, mechanistic interpretations, predictions, and operational prescriptions.
 
@@ -183,17 +208,19 @@ They remain historical hypotheses/results to audit, not inputs to independent ev
 
 ## 10. Next exact actions
 
-1. Execute the massive native-grid literature pass across modal monitoring, PMU/WAMS methods, early warning, recovery/resilience, dynamic security, IBR/grid-forming dynamics, system strength, non-normal/spectral geometry, and modern comparators.
+1. Complete the recovery-specific literature/prior-art collision pass, including grid recovery, resilience, critical slowing, trajectory methods, repeated disturbances, non-normal transients, and operational event classification.
 2. Inventory the complete Popstop data tree and classify every file as RAW/SOURCE, SOURCE_METADATA, DERIVED_HISTORICAL, CODE_HISTORICAL, or UNKNOWN.
 3. Correct the source-unit model and reconstruct measurement/QI handling before generating any new event or forcing statistic.
-4. Trace the historical modal χ code path separately from the contaminated derivative/event path; do not infer one from the other.
-5. Complete atomic historical claim and bibliography audits as a negative-control/error-history lane, not as the driver of the new science.
-6. From literature + data capabilities, define the clean-sheet residual questions and the strongest native comparators.
-7. Only then decide which questions enter P0-D exploration or P0-Q qualification. Before any P1 test, freeze estimators, preprocessing, windows, comparators, thresholds/endpoints, refusal rules, and independent evidence under GOM v1.0 and MFR-14.
+4. Build an outcome-blind local baseline, perturbation, return-set, sustained-recovery, interruption, and residual-burden framework on raw frequency data.
+5. Establish a development-only conditional normal-recovery envelope using native state and event context before testing any SymC-derived representation.
+6. Test whether prior perturbation/recovery history adds out-of-sample information beyond current state, event magnitude/type, baseline motion, noise, and forcing; preserve erosion, null, and strengthening outcomes symmetrically.
+7. Add modal/vector Χ and possible Χ_arc recovery analysis only where richer data independently support those levels.
+8. Trace the historical modal χ code path separately from the contaminated derivative/event path as provenance/error-history work, not as the driver of the new science.
+9. Freeze the qualified recovery methodology before untouched-event evaluation and any practical tool claim under GOM v1.0 and MFR-14.
 
 ## 11. Continuity state
 
 **Authoritative lane:** this branch and this working record.  
 **Current scientific state:** ACTIVE, no scientific gate requiring user action.  
-**Last genuine advancement:** clean-sheet scope correction recorded; Popstop real-data corpus located; source units verified as mHz deviation; historical derivative scaling defect identified; large native-literature searches launched.  
-**Next advancement criterion:** literature atlas + complete raw/derived data inventory + modal-estimator provenance map materially established.
+**Last genuine advancement:** market Q040 recoverability architecture recovered and transferred structurally; grid recoverability promoted to the central hypothesis; clean-sheet claim ladder G-R0 through G-R4 and normal-vs-abnormal recovery tool target recorded.  
+**Next advancement criterion:** recovery-specific prior-art collision map + outcome-blind baseline/perturbation/recovery construction defined for the raw grid-frequency corpus.
