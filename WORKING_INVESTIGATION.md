@@ -1,8 +1,8 @@
 # WORKING_INVESTIGATION.md
 
-## Power Grid Revalidation / Native-Grid Reconstruction
+## Power Grid Clean-Sheet Investigation / Native Stability Architecture
 
-**Status:** ACTIVE — P0-N PRIOR-ART / P0-D HISTORICAL CLAIM RECONSTRUCTION  
+**Status:** ACTIVE — CLEAN-SHEET P0-N PRIOR-ART / P0-D DATA-AND-HISTORICAL AUDIT  
 **Date opened:** 2026-10-01  
 **Authoritative research branch:** `grid-revalidation-2026-10-01`  
 **Base branch:** `main`  
@@ -12,13 +12,13 @@
 
 ## 1. Scientific question
 
-Reconstruct the power-grid investigation from native power-system dynamics and the preserved historical SymC materials, determine claim-by-claim what is mathematically correct, empirically supported, overstated, contradicted, non-identifiable, or still worth testing, and only then define any new exploratory or confirmatory program.
+Investigate power-grid stability from a clean scientific sheet using native power-system dynamics, a massive prior-art pass, and source-identifiable real data. The 2025 SymC grid paper and all prior derived products are historical artifacts only: they may supply questions, failure modes, code paths, or claims to test, but they have no privileged status and do not define the new theory, hypotheses, thresholds, endpoints, or narrative.
 
-The rebuild is not a defense of the 2025 manuscript. Historical material is a hypothesis/evidence inventory.
+The objective is a new evidence-led investigation suitable for a genuinely new paper version if the results earn one. Nothing from the old paper is presumed true because it was previously published, uploaded, followed, or labeled validated. Equally, useful pieces are not discarded merely because the old paper overreached.
 
 ## 2. Rule of engagement
 
-1. Truth over continuity. A historical claim may be narrowed, refused, or discarded without penalty.
+1. Truth over continuity. No marriage to the historical paper, SymC interpretation, old thresholds, old χ constructions, or prior conclusions. A historical claim may be retained, narrowed, refused, replaced, or discarded without penalty.
 2. Native-grid-first chain:
    native observables -> native dynamics -> measurable observables -> stability representation -> chi-related construction -> SymC interpretation.
 3. Preserve the three construction levels:
@@ -54,6 +54,23 @@ The rebuild is not a defense of the 2025 manuscript. Historical material is a hy
 - repository `README.md` correction notice
 
 Those records remain scientifically useful but their cited GOM version is superseded by v1.0.
+
+
+## 3A. Real-data corpus now located on Popstop
+
+Primary local data root:
+`C:\Users\CCGTi\OneDrive\Desktop\SymC_GridCon\SymC_GridCon\data`
+
+The directory contains the raw/near-raw KIT/OSF power-grid-frequency corpus and historical derived products. Located streams include EE01, ES_GC01/02, ES_PM01/02/03, FO01, FR01, GB01/02, HR01, IS01, IT01, PL01, PT01, RU01, SE01, synchronized Continental Europe streams, US_TX01/02, US_UT01, ZA01, and several 100-ms archives. Historical outputs include 30-s, 60-s, 120-s and 300-s χ datasets, independent windows, a master χ dataset, and prior window tables.
+
+Evidence firewall:
+- raw/source frequency streams are primary candidate empirical inputs;
+- dataset quality-indicator columns and source metadata remain part of the measurement record;
+- historical window tables and χ datasets are DERIVED/HISTORICAL and cannot serve as independent confirmation;
+- old code is audit evidence, not the default new pipeline;
+- all new derivations must trace to immutable raw/source identities and corrected units.
+
+The KIT database documentation defines the f50_*/f60_* columns as frequency deviation from nominal in **mHz**, not absolute frequency in Hz. This is now a frozen source-unit fact for intake and preprocessing.
 
 ## 4. Historical claim families recovered
 
@@ -93,6 +110,12 @@ The supplement writes `χ_i = σ_i / |λ_i|`. This is correct only under a conve
 
 ### F-006 — scope promotion problem
 The manuscript repeatedly promotes properties of an ideal second-order oscillator to whole-grid, cross-scale, mechanistic, predictive, and operational conclusions without separately establishing the required evidence at each level. Each promotion step must be audited independently.
+
+
+### F-007 — mHz/s derivative scaling error in historical window builder
+The recovered KIT/OSF database documents `f50_*` and `f60_*` values as deviations from nominal frequency in mHz. The historical `Window_Builder.py` / extraction path computes the first difference of those values and then multiplies by 1000 while labeling the result `mHz/s`. That operation is unit-inconsistent by a factor of 1000 if applied directly to the documented source columns. Saved historical window products contain derivative magnitudes in the thousands of nominal `mHz/s`, consistent with propagation of this scale error. All historical forcing/event flags that depend on this field are therefore contaminated until independently recomputed from raw data with correct units.
+
+This finding does **not** automatically invalidate historical modal χ estimates, because those may have been generated by a separate spectral/modal code path. Their provenance and estimator implementation remain to be traced before judgment.
 
 ## 6. Native facts already provisionally retained
 
@@ -139,8 +162,8 @@ Locate raw data, code, figure-generation sources, event identities/windows, simu
 ### Lane E — prior-art / comparator map
 Reconstruct accepted modal monitoring, oscillation detection, transient/dynamic security, frequency stability, weak-grid/IBR metrics, early-warning literature, forced-oscillation methods, recovery/resilience measures, and current grid-forming controls.
 
-### Lane F — residual SymC question
-Only after A–E: determine whether `χ_i`, modal/vector `Χ`, and system organization `Χ_arc` add information, compression, prediction, or mechanistic clarity beyond native grid quantities.
+### Lane F — clean-sheet candidate architecture questions
+Only after the native literature and data audit: test whether any scalar/local coordinate such as `χ_i`, modal/vector `Χ`, network/system organization `Χ_arc`, or an entirely different native representation adds information, compression, prediction, mechanistic clarity, or useful refusal boundaries beyond established grid quantities. SymC notation is a candidate language, not a required outcome.
 
 ## 9. Frozen prohibitions until evidence reconstruction
 
@@ -160,17 +183,17 @@ They remain historical hypotheses/results to audit, not inputs to independent ev
 
 ## 10. Next exact actions
 
-1. Complete atomic claim extraction from both TeX sources.
-2. Complete bibliography identity/support audit for every cited source.
-3. Search repository history and bundles for raw data/code/figure sources and reconstruct evidence identity.
-4. Build the native prior-art matrix and direct comparators.
-5. Adjudicate every historical atomic claim into the status vocabulary above.
-6. Only then decide which residual questions enter P0-D exploration, P0-Q qualification, or are refused.
-7. Before any P1 test, freeze estimators, preprocessing, windows, comparators, thresholds/endpoints, refusal rules, and independent evidence under GOM v1.0 and MFR-14.
+1. Execute the massive native-grid literature pass across modal monitoring, PMU/WAMS methods, early warning, recovery/resilience, dynamic security, IBR/grid-forming dynamics, system strength, non-normal/spectral geometry, and modern comparators.
+2. Inventory the complete Popstop data tree and classify every file as RAW/SOURCE, SOURCE_METADATA, DERIVED_HISTORICAL, CODE_HISTORICAL, or UNKNOWN.
+3. Correct the source-unit model and reconstruct measurement/QI handling before generating any new event or forcing statistic.
+4. Trace the historical modal χ code path separately from the contaminated derivative/event path; do not infer one from the other.
+5. Complete atomic historical claim and bibliography audits as a negative-control/error-history lane, not as the driver of the new science.
+6. From literature + data capabilities, define the clean-sheet residual questions and the strongest native comparators.
+7. Only then decide which questions enter P0-D exploration or P0-Q qualification. Before any P1 test, freeze estimators, preprocessing, windows, comparators, thresholds/endpoints, refusal rules, and independent evidence under GOM v1.0 and MFR-14.
 
 ## 11. Continuity state
 
 **Authoritative lane:** this branch and this working record.  
 **Current scientific state:** ACTIVE, no scientific gate requiring user action.  
-**Last genuine advancement:** recovery of canonical historical sources, September rebuild records, and initial source/method defects; branch opened under GOM v1.0.  
-**Next advancement criterion:** atomic claim ledger + source identity matrix materially expanded from historical family-level triage.
+**Last genuine advancement:** clean-sheet scope correction recorded; Popstop real-data corpus located; source units verified as mHz deviation; historical derivative scaling defect identified; large native-literature searches launched.  
+**Next advancement criterion:** literature atlas + complete raw/derived data inventory + modal-estimator provenance map materially established.
