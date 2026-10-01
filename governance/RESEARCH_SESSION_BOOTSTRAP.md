@@ -5,7 +5,7 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 ## Required startup sequence
 
 1. At the first substantive turn of a new SymC research chat, load the current authoritative SymC General Operations Manual (GOM) before substantial analysis or execution whenever it is accessible through the conversation, project files, File Library, or a connected repository source.
-2. Read the Core Card first. Load the Operating Quick Reference only when the task can trigger those controls, then read the GOM sections material to the immediate task. Do not require a full reread of the entire manual for every question.
+2. Read Section 0.4.0 first, then the Core Card. Load the Operating Quick Reference only when the task can trigger those controls, then read the GOM sections material to the immediate task. Do not require a full reread of the entire manual for every question unless a full governance audit is itself the task.
 3. If the current GOM cannot be loaded and GitHub access is not available to the conversation, surface the option to connect or enable GitHub at the beginning of the conversation, before a long research response. Authorization delay should not consume several minutes of reading before the user learns that repository access is needed.
 4. If GitHub is already connected and authorized, use it when repository state is material. Do not ask for redundant per-conversation permission.
 5. Before inheriting active work, verify current source-of-record state: active branch/workflow/run, relevant commit, watchdog/recovery state, and whether the work has already completed, failed, been superseded, or fallen off.
@@ -14,15 +14,24 @@ Purpose: eliminate avoidable startup delay and prevent new research chats from p
 
 ## Current authoritative baseline
 
-SymC General Operations Manual v0.8.6, dated 22 September 2026.
+SymC General Operations Manual **v1.1**, dated **1 October 2026**, is the definitive active baseline and supersedes v1.0.
 
-Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v0.8.6.md` (duplicate Library filenames may include a numeric suffix).
+Directly verified authoritative Library artifact: `SymC_General_Operations_Manual_v1.1.md`.
 
-Directly verified Markdown SHA-256: `82d7096627ede6b9522368e8eea2591d0c51f02e35ed78b24000182d2cdde44c`
+Canonical companion working-record template: `WORKING_INVESTIGATION_TEMPLATE_v1.1.md`.
 
-v0.8.6 was explicitly authorized by the user and supersedes v0.8.5. It retains the scientific architecture, scalar chi / broader Chi joint-meaning requirement, perturbation-response/recovery architecture, MFR-14 floor, domain-informed mediation controls, and manuscript house style, while front-loading the canonical paper-building, formatting, lay-explanation, and reproducibility-guide presentation rules into Section 0.4.
+v1.1 locks the program notation to:
+- lowercase `chi` / \(\chi\): licensed scalar/local coordinate;
+- capital `Chi` / \(\Chi\): modal/vector representation;
+- `Chi_arc` / \(\Chi_{\mathrm{arc}}\): overall reconstructed stability architecture.
 
-This is a pointer, not a permanent claim of currency. A later explicitly adopted active version supersedes it. Numbered releases are promoted only by explicit user authorization; review builds do not become active releases, and version numbers are not skipped unless the user explicitly authorizes the skip.
+Conglomerate/system organization is a contributing starting component and is not automatically identical to \(\Chi_{\mathrm{arc}}\). Admission at one level does not imply admission at another.
+
+Legacy artifacts are migrated semantically, not by blind replacement. Historical, archived, submitted, accepted, and published artifacts retain their original notation. At the next substantive touch, active artifacts map a legacy capital `Chi` meaning the full architecture to `Chi_arc`, while preserving any use of capital `Chi` that genuinely denotes modal/vector structure.
+
+A numbered GOM version is canonical immediately when issued and remains authoritative until superseded by a later numbered version. Unnumbered working drafts may exist during editing; there is no separate REVIEW/promotion state for an issued numbered version.
+
+This bootstrap is a pointer, not an independent authority. If a later numbered GOM exists, that later numbered version supersedes this pointer and the pointer must be updated as a mechanical governance repair.
 
 ## Internal-use transfer principle
 
@@ -39,16 +48,17 @@ Default adaptable flow: Status; What happened; Why it matters; What happens next
 Governing presentation principle: scrolling should correspond primarily to new information, not formatting.
 
 
-## v0.8.3 cross-program additions retained through v0.8.6
+## Current cross-program representation obligations
 
-Every active project must now explicitly determine, where scientifically applicable:
+Every active project must determine, where scientifically applicable:
 
-1. what lowercase scalar `chi` means and whether it is admitted at all;
-2. what broader `Chi`/system architecture means without forcing a scalar collapse;
-3. what the two mean **together**, including how local/modal behavior contributes to system organization and how system organization conditions local realized behavior;
-4. whether perturbation is an informative probe of that joint meaning;
-5. when a claim concerns response, return, resilience, adaptation, or post-perturbation organization, separate resistance, finite-time response, first reclaim, sustained recovery, reorganization, basin robustness, and repeated-perturbation behavior.
+1. what licensed scalar \(\chi\) means, if any, and its carrier, boundary, or scope;
+2. what modal/vector \(\Chi\) means in the native mathematics, if that level is admitted;
+3. what conglomerate/system organization exists independently of those lower representations;
+4. what overall reconstructed \(\Chi_{\mathrm{arc}}\) is supported, if any, and which admitted components and relations contribute to it;
+5. what the admitted levels mean together, including coupling, hierarchy, inheritance, recovery, transformation, emergence, and information loss;
+6. whether perturbation/recovery is an informative probe for the claim actually being made.
 
-The program must not identify stability with recovery universally. Recovery evidence is required only when the promoted claim actually depends on return/resilience/adaptation or post-perturbation organization.
+The program does not require every domain to instantiate every layer. `NOT_APPLICABLE`, `REFUSED`, `NON_IDENTIFIABLE`, `UNRESOLVED`, and no-coherent-scalar outcomes remain scientifically valid.
 
-Project-local implementations may legitimately return NOT_APPLICABLE, REFUSED, NON_IDENTIFIABLE, or NO_COHERENT_SCALAR where the native science does not support a given layer.
+The program must not identify stability with recovery universally. Recovery evidence is required only when the promoted claim depends on return, resilience, adaptation, or post-perturbation organization.
